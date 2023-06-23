@@ -35,7 +35,7 @@ html, body { /*...*/
   padding: 0;
   background-color: #ffff9b;
 }
-#footer{ /*colore riga sfondo paginazione*/
+#footer{
   height: 50px; /* Altezza del footer */
   background-color: #51361a;
   text-align: center;
@@ -69,12 +69,12 @@ button{
   font-size: medium;
   margin-top: 10px;
 }
-button:focus{/*colore testo scelta film e tv e favorite*/
+button:focus{
   background-color: #ffff9b;
   color: #51361a;
   height: 50px;
 }
-.image-item img:hover{ /*immagine con cursore sopra, ingrandimento*/
+.image-item img:hover{ 
   border: 5px solid #51361a;
   z-index: 50; 
 }
@@ -107,7 +107,7 @@ li {
 li:last-child {
   margin-right: 0;
 }
-li button { /*...*/
+li button {
   background: none;
   border: none;
   padding: 15px;
@@ -140,8 +140,6 @@ button:hover{
   font-size: medium;
   text-align: center;
   margin-top: 10px;
-  
-  /*transition: background-color 0.3s ease;*/
 }
 
 .page-number:hover {
@@ -162,6 +160,7 @@ button:hover{
   width: 100%;
   height: 100%;
   overflow: auto;
+  background-color: rgba(126, 83, 41, 0.5);
 }
 .modal-content {
   background-color: #51361a;
@@ -192,14 +191,14 @@ input{
   color: red;
 }
 
-#listLanguage ul li { /*...*/
+#listLanguage ul li { 
   background-color: #f0e68c;
   width: 250px;
   color: #51361a;
   text-decoration: none;
   z-index: 100;
 }
-#listLanguage ul li:hover { /*sfondo lingue scelta testo*/ /*...*/
+#listLanguage ul li:hover {
   background-color: beige; 
   border: 1px;
   width: 100;
