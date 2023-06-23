@@ -1,0 +1,239 @@
+.image-grid {
+  display: flex;
+  justify-items: center;
+  margin-top: 25px;
+  margin-bottom: -25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.image-item a {
+  display: block;
+}
+
+.image-item img {
+  width: 100%;
+  height: 275px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+html, body { /*...*/
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff9b;
+}
+#footer{ /*colore riga sfondo paginazione*/
+  height: 50px; /* Altezza del footer */
+  background-color: #51361a;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: medium;
+}
+
+#navDiv{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  background-color: beige;
+}
+#mainDiv{
+  padding-top: 30px;
+  align-items: center;
+  margin-left: 4%;
+  min-height: 100%;
+  margin-bottom: -50px; /* Altezza del footer */
+  padding-bottom: 50px; 
+  padding-top: 100px;
+  margin-right: 4%;
+}
+
+button{
+  border: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: transparent;
+  color: beige;
+  font-size: medium;
+  margin-top: 10px;
+}
+button:focus{/*colore testo scelta film e tv e favorite*/
+  background-color: #ffff9b;
+  color: #51361a;
+  height: 50px;
+}
+.image-item img:hover{ /*immagine con cursore sopra, ingrandimento*/
+  border: 5px solid #51361a;
+  z-index: 50; 
+}
+
+/*caratteristica navbar*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #51361a;
+  padding: 0px;
+  margin-bottom: 50px;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+li {
+  margin-right: 10px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+li button { /*...*/
+  background: none;
+  border: none;
+  padding: 15px;
+  color: beige;
+  text-decoration: none;
+  height: max-content;
+}
+
+li button:hover {
+  background-color: #7e5429;
+}
+button:hover{
+  text-decoration: underline;
+}
+/*style paginazione*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.page-number {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: beige;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: medium;
+  text-align: center;
+  margin-top: 10px;
+  
+  /*transition: background-color 0.3s ease;*/
+}
+
+.page-number:hover {
+  background-color: #7e5429;
+}
+
+.page-number.active {
+  background-color: beige;
+  color: #51361a;
+}
+/*style modal*/
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.modal-content {
+  background-color: #51361a;
+  color: beige;
+  margin: 15% auto;
+  padding: 20px;
+  width: 60%;
+  max-width: 800px;
+}
+.modal-content img{
+  width: 100%;
+  height: auto;
+}
+input{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.modal-content button{
+  background-color: #f0e68c;
+  color: #51361a;
+  border: 2px solid #7e5429;
+}
+.modal-content button:focus{
+  background-color: #f0e68c;
+  color: #51361a;
+  border: 2px solid #7e5429;
+}
+.errore{
+  color: red;
+}
+
+#listLanguage ul li { /*...*/
+  background-color: #f0e68c;
+  width: 250px;
+  color: #51361a;
+  text-decoration: none;
+  z-index: 100;
+}
+#listLanguage ul li:hover { /*sfondo lingue scelta testo*/ /*...*/
+  background-color: beige; 
+  border: 1px;
+  width: 100;
+  text-decoration: none;
+}
+#listLanguage{
+  overflow-y: auto;
+  text-decoration: none;
+  height: 250px;
+  z-index: 200;
+}
+#selectLingua{
+  z-index: 900;
+  position: relative;
+}
+
+#search{
+  margin-left: 600px;
+  position: relative;
+}
+
+#titleWeb {
+  color: #cd7f32;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 150px;
+  font-size: 50px;
+  margin-top: 10px;
+  position: fixed;
+}
+
+#notFound{
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+}
